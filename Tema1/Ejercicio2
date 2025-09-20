@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libro>EL ÚLTIMO SECRETO</libro>
+    <autor>Dan Brown</autor>
+    <precio>23,65€</precio>
+
+    <libro>LA PROTEGIDA</libro>
+    <autor>Rafael Tarradas Bultó</autor>
+    <precio>12,34€</precio>
+</biblioteca>
