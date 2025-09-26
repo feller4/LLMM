@@ -1,0 +1,6 @@
+Markdown es un lenguaje de marcado ligero que permite escribir texto con formato de manera sencilla, usando caracteres normales en lugar de menús complicados.
+
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Círculo -->
+  <circle cx="100" cy="100" r="80" fill="red" stroke="black" stroke-width="3" />
+</svg>
