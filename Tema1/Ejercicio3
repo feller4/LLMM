@@ -1,6 +1,28 @@
-Markdown es un lenguaje de marcado ligero que permite escribir texto con formato de manera sencilla, usando caracteres normales en lugar de menús complicados.
+<!DOCTYPE html>
+<html lang="en">
 
-<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Círculo -->
-  <circle cx="100" cy="100" r="80" fill="red" stroke="black" stroke-width="3" />
-</svg>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio1</title>
+</head>
+
+<body>
+    <h1>Curriculum Vitae</h1>
+
+    <h2>Datos personales</h2>
+    <strong><p>Nombre completo: Juan Pérez</p>
+    <p> Fecha de nacimiento: 12 de diciembre de 1982</p>
+    <p>Lugar de nacimiento: Huelva (España)</p></strong>
+
+    <h2>Formación académica</h2>
+    <p>2000-2004: Universidad de Huelva</p>
+    <p> 1994-2000: IES La Marisma</p>
+
+    <h2>Experiencia laboral</h2>
+    <p> 2004-2019: Diseño web</p>
+    <p>2000-2004: Colaboración con diversas ONGs</p>
+
+
+</body>
+
+</html>
