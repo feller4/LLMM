@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio5</title>
+</head>
+
+<body>
+<h1>Encabezado1</h1>
+<p style="text-align:center">Texto en el centro</p>
+<h1>Encabezado2</h1>
+<p style="text-align:left">Texto a la izq</p>
+<h1>Encabezado3</h1>
+<p style="text-align:right">Texto a la derecha</p>
+<h1>Encabezado4</h1>
+<p style="text-align:justify">Texto justificado</p>
+<h1>Encabezado5</h1>
+<p style="text-align: end;">Texto al final</p>
+<h1>Encabezado6</h1>
+<p style="text-align: start;">Texto al principio</p>
+</body>
+
+</html>
