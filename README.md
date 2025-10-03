@@ -15,3 +15,9 @@
 | [Ejercicio 2](Tema1/Ejercicio2) |  |
 | [Ejercicio 3](Tema1/Ejercicio3) |  |
 | [Ejercicio 4](Tema1/Ejercicio4) |  |
+| [Ejercicio 5](Tema1/Ejercicio5) |  |
+| [Ejercicio 6](Tema1/Ejercicio6) |  |
+| [Ejercicio 7](Tema1/Ejercicio7) |  |
+| [Ejercicio 8](Tema1/Ejercicio8) |  |
+| [Ejercicio 9](Tema1/Ejercicio9) |  |
+| [Ejercicio 10](Tema1/Ejercicio10) |  |
