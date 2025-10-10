@@ -21,4 +21,4 @@
 | [Ejercicio 8](Tema1/Ejercicio8.html) | Ejercicio con enlaces |
 | [Ejercicio 9](Tema1/Ejercicio9.html) | Crea un página html como la mostrada |
 | [Ejercicio 10](Tema1/Ejercicio10.html) | Escriba una página HTML con la siguiente lista anidada de dos niveles |
-| [Ejercicio 10](Tema1/Ejercicio11.html) | Añadimos los siguientes ítems |
+| [Ejercicio 11](Tema1/Ejercicio11.html) | Añadimos los siguientes ítems |
