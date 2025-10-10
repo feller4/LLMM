@@ -18,6 +18,7 @@
 | [Ejercicio 5](Tema1/Ejercicio5.html) | Una página que contiene varios párrafos, con distinta alineación y con encabezados. |
 | [Ejercicio 6](Tema1/Ejercicio6.html) | Modificar la página anterior para incluir distintos formatos de texto. |
 | [Ejercicio 7](Tema1/Ejercicio7.html) | Cambiar los atributos de la página para cambiar el fondo y color |
-| [Ejercicio 8](Tema1/Ejercicio8.html) |  |
-| [Ejercicio 9](Tema1/Ejercicio9.html) |  |
-| [Ejercicio 10](Tema1/Ejercicio10.html) |  |
+| [Ejercicio 8](Tema1/Ejercicio8.html) | Ejercicio con enlaces |
+| [Ejercicio 9](Tema1/Ejercicio9.html) | Crea un página html como la mostrada |
+| [Ejercicio 10](Tema1/Ejercicio10.html) | Escriba una página HTML con la siguiente lista anidada de dos niveles |
+| [Ejercicio 10](Tema1/Ejercicio11.html) | Añadimos los siguientes ítems |
