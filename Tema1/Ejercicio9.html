@@ -2,34 +2,76 @@
 <html>
 <head>
   <title>Runners Home™</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;+
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #874d21;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 8px;
+      color: #f6b06a;
+    }
+
+    main {
+      flex: 1; /* Esto empuja el footer hacia abajo */
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="races.html">Races</a> |
-        <a href="resources.html">Resources</a> |
-        <a href="calculator.html" target="_blank">Calculator</a> |
-        <a href="runninglog.html">Running Log</a> |
-        <a href="myaccount.html">My Account</a> |
-        <a href="logout.html">Log out</a>
-    </nav>
 
-    <hr>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="races.html">Races</a> |
+    <a href="resources.html">Resources</a> |
+    <a href="calculator.html" target="_blank">Calculator</a> |
+    <a href="runninglog.html">Running Log</a> |
+    <a href="myaccount.html">My Account</a> |
+    <a href="logout.html">Log out</a>
+  </nav>
+
+  <hr>
+
+  <main>
     <p>Hello, Stranger!</p>
 
     <h1>Welcome to Runners Home™</h1>
 
     <p>Runners Home™ is dedicated to providing you with:</p>
     <ul>
-        <li><a href="races.html">the most up-to-date information on running races</a></li>
-        <li><a href="resources.html">the best resources for runners</a></li>
+      <li><a href="races.html">the most up-to-date information on running races</a></li>
+      <li><a href="resources.html">the best resources for runners</a></li>
     </ul>
+  </main>
 
-    <hr>
-    <footer >© 2007 Runners Home. All rights reserved.  
-       For questions, send email to 
-       <a href="mailto:info@runnershome.com">info@runnershome.com</a>.
-    </footer>
+  <hr>
+
+  <footer>
+    © 2007 Runners Home. All rights reserved.  
+    For questions, send email to 
+    <a href="mailto:info@runnershome.com">info@runnershome.com</a>.
+  </footer>
 
 </body>
 </html>
+
