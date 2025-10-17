@@ -1,6 +1,7 @@
 # Lenguaje de marca. 
 
 ## Tema 0 - LMSGI_01_Actividades
+
 | Ejercicios | descripción |
 | --- | --- |
 | [Ejercicio 1](Tema0/Ejercicio1.html) | HTML con un encabezado h1 y un pequeño párrafo de texto. |
@@ -9,6 +10,7 @@
 | [Ejercicio 4](https://github.com/feller4/Prueba) | Prueba de Readme del repositorio prueba. |
 
 ## Tema 1 - LMSGI_02_Actividades
+
 | Ejercicios | descripción |
 | --- | --- |
 | [Ejercicio 1](Tema1/Ejercicio1.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
