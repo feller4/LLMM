@@ -27,3 +27,10 @@
 | [Ejercicio 12](Tema1/Ejercicio12.html) | Añadimos los siguientes ítems |
 | [Ejercicio 13](Tema1/Ejercicio13.html) | Añadimos los siguientes ítems |
 | [Ejercicio 14](Tema1/Ejercicio14.html) | Añadimos los siguientes ítems |
+| [Ejercicio 15](Tema1/Ejercicio15.html) | Añadimos los siguientes ítems |
+| [Ejercicio 16](Tema1/Ejercicio16.html) | Añadimos los siguientes ítems |
+| [Ejercicio 17](Tema1/Ejercicio17.html) | Añadimos los siguientes ítems |
+| [Ejercicio 18](Tema1/Ejercicio18.html) | Añadimos los siguientes ítems |
+| [Ejercicio 19](Tema1/Ejercicio19.html) | Añadimos los siguientes ítems |
+| [Ejercicio 20](Tema1/Ejercicio20.html) | Añadimos los siguientes ítems |
+| [Ejercicio 21](Tema1/Ejercicio21.html) | Añadimos los siguientes ítems |
