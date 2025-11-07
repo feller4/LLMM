@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado de la búsqueda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td img {
+            width: 100px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: left;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .tachado {
+            text-decoration: line-through;
+            color: gray;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resultado de la búsqueda</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Datos</th>
+        </tr>
+        <tr>
+            <td><img src="portatil.png" alt="Portátil"></td>
+            <td>
+                <a href="#">Portátil - 3 GHz - 4 GB RAM</a><br>
+                Comprar: <span class="tachado">2.990 €</span> <strong>2.599 €</strong>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="videocamara.png" alt="Videocámara"></td>
+            <td>
+                <a href="#">Videocámara - Alta definición 1080p - 60 GB</a><br>
+                Comprar: <span class="tachado">1.099 €</span> <strong>999 €</strong>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="tv.png" alt="Televisor"></td>
+            <td>
+                <a href="#">Televisor - 46" - Full HD</a><br>
+                Comprar: <span class="tachado">1.999 €</span> <strong>1.799 €</strong>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="movil.png" alt="Móvil"></td>
+            <td>
+                <a href="#">Móvil - 3G - Wi-Fi - 8 GB</a><br>
+                Comprar: <span class="tachado">399 €</span> <strong>349 €</strong>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
