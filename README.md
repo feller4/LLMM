@@ -23,18 +23,18 @@
 | [Ejercicio 8](Tema1/Ejercicio8.html) | Ejercicio con enlaces |
 | [Ejercicio 9](Tema1/Ejercicio9.html) | Crea un página html como la mostrada |
 | [Ejercicio 10](Tema1/Ejercicio10.html) | Escriba una página HTML con la siguiente lista anidada de dos niveles |
-| [Ejercicio 11](Tema1/Ejercicio11.html) | Añadimos los siguientes ítems |
-| [Ejercicio 12](Tema1/Ejercicio12.html) | Añadimos los siguientes ítems |
-| [Ejercicio 13](Tema1/Ejercicio13.html) | Añadimos los siguientes ítems |
-| [Ejercicio 14](Tema1/Ejercicio14.html) | Añadimos los siguientes ítems |
-| [Ejercicio 15](Tema1/Ejercicio15.html) | Añadimos los siguientes ítems |
-| [Ejercicio 16](Tema1/Ejercicio16.html) | Añadimos los siguientes ítems |
-| [Ejercicio 17](Tema1/Ejercicio17/Ejercicio17.html) | Añadimos los siguientes ítems |
-| [Ejercicio 18](Tema1/Ejercicio18/Ejercicio18.html) | Añadimos los siguientes ítems |
-| [Ejercicio 19](Tema1/Ejercicio19/Ejercicio19.html) | Añadimos los siguientes ítems |
-| [Ejercicio 20](Tema1/Ejercicio20/Ejercicio20.html) | Añadimos los siguientes ítems |
-| [Ejercicio 21](Tema1/Ejercicio21.html) | Añadimos los siguientes ítems |
-| [Ejercicio 22](Tema1/Ejercicio22/Ejercicio22.html) | Añadimos los siguientes ítems |
-| [Ejercicio 23](Tema1/Ejercicio23.html) | Añadimos los siguientes ítems |
-| [Ejercicio 24](Tema1/Ejercicio24.html) | Añadimos los siguientes ítems |
-| [Ejercicio 25](Tema1/Ejercicio25.html) | Añadimos los siguientes ítems |
+| [Ejercicio 11](Tema1/Ejercicio11.html) | Añadimos listas |
+| [Ejercicio 12](Tema1/Ejercicio12.html) | Añadimos html styles |
+| [Ejercicio 13](Tema1/Ejercicio13.html) | Añadimos html borders |
+| [Ejercicio 14](Tema1/Ejercicio14.html) | Añadimos margin y padding |
+| [Ejercicio 15](Tema1/Ejercicio15.html) | Crea la tabla mostrada |
+| [Ejercicio 16](Tema1/Ejercicio16.html) | Añadimos tablas |
+| [Ejercicio 17](Tema1/Ejercicio17/Ejercicio17.html) | Añadimos tablas |
+| [Ejercicio 18](Tema1/Ejercicio18/Ejercicio18.html) | Añadimos tablas |
+| [Ejercicio 19](Tema1/Ejercicio19/Ejercicio19.html) | Añadimos imágenes |
+| [Ejercicio 20](Tema1/Ejercicio20/Ejercicio20.html) | Añadimos imágenes |
+| [Ejercicio 21](Tema1/Ejercicio21.html) | Añadimos imágenes |
+| [Ejercicio 22](Tema1/Ejercicio22/Ejercicio22.html) | Añadimos favicon |
+| [Ejercicio 23](Tema1/Ejercicio23.html) | Añadimos  iFrame |
+| [Ejercicio 24](Tema1/Ejercicio24.html) | Añadimos formularios |
+| [Ejercicio 25](Tema1/Ejercicio25.html) | Añadimos formularios |
