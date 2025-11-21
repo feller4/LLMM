@@ -39,6 +39,6 @@
 | [Ejercicio 24](Tema1/Ejercicio24.html) | Añadimos formularios |
 | [Ejercicio 25](Tema1/Ejercicio25.htm) | Añadimos formularios |
 | [Ejercicio 26](Tema1/Ejercicio26/Ejercicio26.html) | Añadimos formularios |
-| [Ejercicio 26_2](Tema1/Ejercicio26Ejercicio26_2.html) | Creamos una página con un video |
+| [Ejercicio 26_2](Tema1/Ejercicio26/Ejercicio26_2.html) | Creamos una página con un video |
 | [Ejercicio 27](Tema1/Ejercicio27/Ejercicio27.html) | Creamos una página con un fichero de sonido |
-| [Ejercicio 28](Tema1/Ejercicio28) | Creamos una página con un video incrustado de Youtube |
+| [Ejercicio 28](Tema1/Ejercicio28.html) | Creamos una página con un video incrustado de Youtube |
