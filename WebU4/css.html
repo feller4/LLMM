@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web4U - CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body class="c-body">
+
+    <header class="c-header">
+        <div class="c-mw-wrap">
+            <div class="c-nav-wrap">
+                <a href="index.html" class="c-logo">
+                    Web4U
+                </a>
+                
+                <nav class="c-nav">
+                    <a href="index.html" id="nav-Home" 
+                        class="nav-link nav-btn">
+                        Inicio
+                    </a>
+                    <a href="html.html" id="nav-HTML"
+                        class="nav-link nav-btn">
+                        HTML
+                    </a>
+                    <a href="svg.html" id="nav-SVG"
+                        class="nav-link nav-btn">
+                        SVG
+                    </a>
+                    <a href="css.html" id="nav-CSS"
+                        class="nav-link nav-btn nav-active">
+                        CSS
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="c-main c-mw-wrap">
+
+        <div id="page-CSS" class="page-view-content">
+            <h1 class="h-title css-color">
+                CSS: Cómo Darle Estilo
+            </h1>
+            <p class="p-lead">
+                El CSS son las reglas de estilo. Con esto le dices a tus elementos de HTML qué colores, tamaños y posiciones deben tener.
+            </p>
+
+            <div class="c-toc css-toc-border">
+                <h3 class="h-toc-title">Índice Rápido</h3>
+                <ul class="c-list-grid">
+                    <li><a href="#css-flex" class="a-link">display: flex (Organizar en fila)</a></li>
+                    <li><a href="#css-grid" class="a-link">grid-template-columns (Cuadrículas)</a></li>
+                    <li><a href="#css-border-radius" class="a-link">border-radius (Esquinas Redondas)</a></li>
+                    <li><a href="#css-box-shadow" class="a-link">box-shadow (Sombras)</a></li>
+                    <li><a href="#css-transition" class="a-link">transition (Movimiento Suave)</a></li>
+                </ul>
+            </div>
+            
+            <section id="css-flex" class="basic-section">
+                <h2 class="h-section-title">1. La Propiedad `display: flex`</h2>
+                <p class="p-body">
+                    Es la forma más fácil de organizar elementos en fila (o columna) y que se alineen solos.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>.contenedor {
+    display: flex;
+    justify-content: center;
+}</code></pre>
+                <h3 class="h-sub-title">Resultado en el Navegador</h3>
+                <img src="https://placehold.co/400x80/2dd4bf/134e4a?text=Flexbox+Simple:+[Item]+[Item]+[Item]" alt="Imagen de marcador de posición que muestra tres elementos centrados en una fila usando flexbox" class="img-eg">
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="css-grid" class="basic-section">
+                <h2 class="h-section-title">2. La Propiedad `grid-template-columns`</h2>
+                <p class="p-body">
+                    Te permite crear una cuadrícula, como una tabla, para organizar secciones complejas. Esta propiedad define el ancho de las columnas.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}</code></pre>
+                <h3 class="h-sub-title">Resultado en el Navegador</h3>
+                <img src="https://placehold.co/400x80/93c5fd/1e40af?text=Grid+Simple:+Columna+1+%7C+Columna+2" alt="Imagen de marcador de posición que muestra un diseño de cuadrícula con dos columnas iguales" class="img-eg">
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="css-border-radius" class="basic-section">
+                <h2 class="h-section-title">3. La Propiedad `border-radius`</h2>
+                <p class="p-body">
+                    Hace que las esquinas de un elemento sean redondas en lugar de cuadradas.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>.mi-caja {
+    border-radius: 10px;
+}</code></pre>
+                <h3 class="h-sub-title">Resultado en el Navegador</h3>
+                <img src="https://placehold.co/400x80/fbcfe8/be185d?text=Caja+con+Esquinas+Redondas" alt="Imagen de marcador de posición que muestra una caja con esquinas suaves y redondeadas" class="img-eg img-border-r">
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="css-box-shadow" class="basic-section">
+                <h2 class="h-section-title">4. La Propiedad `box-shadow`</h2>
+                <p class="p-body">
+                    Añade una sombra a una caja para darle profundidad. Los números controlan qué tan lejos y qué tan difusa es la sombra.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>.tarjeta {
+    box-shadow: 2px 2px 5px gray;
+}</code></pre>
+                <h3 class="h-sub-title">Resultado en el Navegador</h3>
+                <img src="https://placehold.co/400x80/fce7f3/831843?text=Elemento+Con+Sombra" alt="Imagen de marcador de posición que muestra una caja con una sombra simple" class="img-eg img-shadow">
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="css-transition" class="basic-section">
+                <h2 class="h-section-title">5. La Propiedad `transition`</h2>
+                <p class="p-body">
+                    Sirve para que los cambios de estilo (como el color o el tamaño) no sean instantáneos, sino que se muevan suavemente durante un tiempo.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>.boton {
+    background-color: blue;
+    transition: 0.5s;
+}
+.boton:hover {
+    background-color: red;
+}</code></pre>
+                <h3 class="h-sub-title">Resultado en el Navegador</h3>
+                <img src="https://placehold.co/400x80/6366f1/ffffff?text=Botón+con+Animación+Suave" alt="Imagen de marcador de posición que muestra un botón que realiza una transición de color suave al pasar el ratón" class="img-eg">
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="c-footer">
+        <div class="c-mw-wrap">
+            <p>&copy; 2025 Web4U. Todos los derechos reservados. | Creado con HTML y CSS Básico.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
