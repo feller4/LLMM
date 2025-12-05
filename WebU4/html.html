@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web4U - HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body class="c-body">
+
+    <header class="c-header">
+        <div class="c-mw-wrap">
+            <div class="c-nav-wrap">
+                <a href="index.html" class="c-logo">
+                    Web4U
+                </a>
+                
+                <nav class="c-nav">
+                    <a href="index.html" id="nav-Home" 
+                        class="nav-link nav-btn">
+                        Inicio
+                    </a>
+                    <a href="html.html" id="nav-HTML"
+                        class="nav-link nav-btn nav-active">
+                        HTML
+                    </a>
+                    <a href="svg.html" id="nav-SVG"
+                        class="nav-link nav-btn">
+                        SVG
+                    </a>
+                    <a href="css.html" id="nav-CSS"
+                        class="nav-link nav-btn">
+                        CSS
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="c-main c-mw-wrap">
+
+        <div id="page-HTML" class="page-view-content">
+            <h1 class="h-title html-color">
+                HTML: Las Etiquetas Clave para Empezar
+            </h1>
+            <p class="p-lead">
+                El HTML es como el esqueleto de tu web. Aquí tienes las etiquetas más útiles para organizar el contenido.
+            </p>
+
+            <div class="c-toc html-toc-border">
+                <h3 class="h-toc-title">Índice Rápido</h3>
+                <ul class="c-list-grid">
+                    <li><a href="#html-div" class="a-link">La etiqueta &lt;div&gt; (Contenedor)</a></li>
+                    <li><a href="#html-a" class="a-link">La etiqueta &lt;a&gt; (Enlace)</a></li>
+                    <li><a href="#html-ul" class="a-link">La etiqueta &lt;ul&gt; (Lista)</a></li>
+                    <li><a href="#html-table" class="a-link">La etiqueta &lt;table&gt; (Tabla)</a></li>
+                    <li><a href="#html-details" class="a-link">La etiqueta &lt;details&gt; (Mostrar/Ocultar)</a></li>
+                </ul>
+            </div>
+            
+            <section id="html-div" class="basic-section">
+                <h2 class="h-section-title">1. La etiqueta &lt;div&gt;</h2>
+                <p class="p-body">
+                    Es el contenedor más usado. Sirve para agrupar varias cosas (texto, imágenes) y luego ponerles color o moverlas juntas con CSS.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>&lt;div&gt;
+    &lt;h3&gt;Aquí va mi contenido&lt;/h3&gt;
+    &lt;p&gt;Esta caja lo agrupa todo.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                <h3 class="h-sub-title">Se ve así:</h3>
+                <img src="https://placehold.co/400x80/f3f4f6/1f2937?text=CAJA+DE+CONTENIDO+SIMPLE" alt="Imagen de marcador de posición que muestra una caja básica de contenido" class="img-eg">
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="html-a" class="basic-section">
+                <h2 class="h-section-title">2. La etiqueta &lt;a&gt;</h2>
+                <p class="p-body">
+                    Crea enlaces. Es lo que hace que puedas ir de una página a otra. El atributo `href` dice a dónde ir.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>&lt;a href="https://www.google.com"&gt;
+    Ir a Google
+&lt;/a&gt;</code></pre>
+                <h3 class="h-sub-title">Se ve así:</h3>
+                <img src="https://placehold.co/400x80/bfdbfe/1d4ed8?text=Ir+a+Google+(enlace+azul)" alt="Imagen de marcador de posición que muestra un enlace de texto clickable" class="img-eg">
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="html-ul" class="basic-section">
+                <h2 class="h-section-title">3. La etiqueta &lt;ul&gt;</h2>
+                <p class="p-body">
+                    Se usa para hacer listas donde el orden no importa (listas desordenadas). Cada punto de la lista es una etiqueta `&lt;li&gt;`.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>&lt;ul&gt;
+    &lt;li&gt;Primer Punto&lt;/li&gt;
+    &lt;li&gt;Segundo Punto&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <h3 class="h-sub-title">Se ve así:</h3>
+                <img src="https://placehold.co/400x80/ccfbf1/0f766e?text=%E2%80%A2+Primer+Punto+%E2%80%A2+Segundo+Punto" alt="Imagen de marcador de posición que muestra una lista con viñetas" class="img-eg">
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+            
+            <section id="html-table" class="basic-section">
+                <h2 class="h-section-title">4. La etiqueta &lt;table&gt;</h2>
+                <p class="p-body">
+                    Sirve para mostrar datos en filas y columnas, como en una hoja de cálculo. Se usa `&lt;tr&gt;` para las filas y `&lt;td&gt;` para las celdas.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>&lt;table border="1"&gt;
+    &lt;tr&gt;&lt;td&gt;Celda 1&lt;/td&gt;&lt;td&gt;Celda 2&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Celda 3&lt;/td&gt;&lt;td&gt;Celda 4&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                <h3 class="h-sub-title">Se ve así:</h3>
+                <img src="https://placehold.co/400x80/fef3c7/b45309?text=Tabla+Sencilla+(Celda+1%2F2%2F3%2F4)" alt="Imagen de marcador de posición que muestra una tabla HTML simple" class="img-eg">
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="html-details" class="basic-section">
+                <h2 class="h-section-title">5. La etiqueta &lt;details&gt;</h2>
+                <p class="p-body">
+                    Permite ocultar un texto que el usuario puede ver haciendo clic. Es muy útil para preguntas frecuentes. El texto que se ve es el que pones en `&lt;summary&gt;`.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>&lt;details&gt;
+    &lt;summary&gt;Haz clic para ver la respuesta&lt;/summary&gt;
+    &lt;p&gt;Aquí está el texto oculto.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+                <h3 class="h-sub-title">Se ve así:</h3>
+                <img src="https://placehold.co/400x80/eef2ff/4338ca?text=Clic+para+ver+respuesta+(Detalles)" alt="Imagen de marcador de posición que muestra un widget de divulgación de detalles" class="img-eg">
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="c-footer">
+        <div class="c-mw-wrap">
+            <p>&copy; 2025 Web4U. Todos los derechos reservados. | Creado con HTML y CSS Básico.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
