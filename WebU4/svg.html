@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web4U - SVG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body class="c-body">
+
+    <header class="c-header">
+        <div class="c-mw-wrap">
+            <div class="c-nav-wrap">
+                <a href="index.html" class="c-logo">
+                    Web4U
+                </a>
+                
+                <nav class="c-nav">
+                    <a href="index.html" id="nav-Home" 
+                        class="nav-link nav-btn">
+                        Inicio
+                    </a>
+                    <a href="html.html" id="nav-HTML"
+                        class="nav-link nav-btn">
+                        HTML
+                    </a>
+                    <a href="svg.html" id="nav-SVG"
+                        class="nav-link nav-btn nav-active">
+                        SVG
+                    </a>
+                    <a href="css.html" id="nav-CSS"
+                        class="nav-link nav-btn">
+                        CSS
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="c-main c-mw-wrap">
+
+        <div id="page-SVG" class="page-view-content">
+            <h1 class="h-title svg-color">
+                SVG: Dibujos para la Web
+            </h1>
+            <p class="p-lead">
+                El SVG sirve para hacer gráficos y dibujos con código. Lo bueno es que se ven bien aunque los hagas gigantes.
+            </p>
+
+            <div class="c-toc svg-toc-border">
+                <h3 class="h-toc-title">Índice Rápido</h3>
+                <ul class="c-list-grid">
+                    <li><a href="#svg-circle" class="a-link">El Elemento &lt;circle&gt; (Círculo)</a></li>
+                    <li><a href="#svg-rect" class="a-link">El Elemento &lt;rect&gt; (Rectángulo)</a></li>
+                    <li><a href="#svg-path" class="a-link">El Elemento &lt;path&gt; (Forma Libre)</a></li>
+                    <li><a href="#svg-text" class="a-link">El Elemento &lt;text&gt; (Texto)</a></li>
+                    <li><a href="#svg-g" class="a-link">El Elemento &lt;g&gt; (Agrupar)</a></li>
+                </ul>
+            </div>
+            
+            <section id="svg-circle" class="basic-section">
+                <h2 class="h-section-title">1. El Elemento &lt;circle&gt;</h2>
+                <p class="p-body">
+                    Dibuja un círculo. Necesita `cx` y `cy` (dónde está el centro) y `r` (qué tan grande es el radio).
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>&lt;svg width="100" height="100"&gt;
+    &lt;circle cx="50" cy="50" r="40" fill="red" /&gt;
+&lt;/svg&gt;</code></pre>
+                <h3 class="h-sub-title">Se ve así:</h3>
+                <div class="svg-showcase">
+                    <svg width="100" height="100" viewBox="0 0 100 100" class="svg-center">
+                        <circle cx="50" cy="50" r="40" fill="#ef4444" />
+                    </svg>
+                </div>
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="svg-rect" class="basic-section">
+                <h2 class="h-section-title">2. El Elemento &lt;rect&gt;</h2>
+                <p class="p-body">
+                    Dibuja un rectángulo. Necesita `width` (ancho) y `height` (alto).
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>&lt;svg width="120" height="80"&gt;
+    &lt;rect width="100" height="60" fill="green" /&gt;
+&lt;/svg&gt;</code></pre>
+                <h3 class="h-sub-title">Se ve así:</h3>
+                <div class="svg-showcase">
+                    <svg width="120" height="80" viewBox="0 0 120 80" class="svg-center">
+                        <rect x="10" y="10" width="100" height="60" fill="#10b981" />
+                    </svg>
+                </div>
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="svg-path" class="basic-section">
+                <h2 class="h-section-title">3. El Elemento &lt;path&gt;</h2>
+                <p class="p-body">
+                    Dibuja cualquier forma que imagines. Usa el atributo `d` con comandos especiales (M=mover, L=línea, C=curva). Es un poco más avanzado.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo (Una Línea)</h3>
+                <pre class="code-block"><code>&lt;svg width="100" height="100"&gt;
+    &lt;path d="M10 10 L90 90" stroke="black" /&gt;
+&lt;/svg&gt;</code></pre>
+                <h3 class="h-sub-title">Se ve así:</h3>
+                <div class="svg-showcase">
+                    <svg width="100" height="100" viewBox="0 0 100 100" class="svg-center">
+                        <path d="M10 10 L90 90" stroke="#1f2937" stroke-width="2" fill="transparent" />
+                    </svg>
+                </div>
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="svg-text" class="basic-section">
+                <h2 class="h-section-title">4. El Elemento &lt;text&gt;</h2>
+                <p class="p-body">
+                    Para poner texto dentro del dibujo SVG. Usas `x` y `y` para ubicarlo.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>&lt;svg width="200" height="50"&gt;
+    &lt;text x="10" y="30" fill="purple"&gt;Hola Texto&lt;/text&gt;
+&lt;/svg&gt;</code></pre>
+                <h3 class="h-sub-title">Se ve así:</h3>
+                <div class="svg-showcase">
+                    <svg width="200" height="50" viewBox="0 0 200 50" class="svg-center">
+                        <text x="10" y="30" font-size="20" fill="#9333ea" font-weight="600">
+                            Hola Texto
+                        </text>
+                    </svg>
+                </div>
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+
+            <section id="svg-g" class="basic-section">
+                <h2 class="h-section-title">5. El Elemento &lt;g&gt;</h2>
+                <p class="p-body">
+                    Sirve para agrupar formas. Si mueves el `&lt;g&gt;`, todas las formas que estén dentro se mueven juntas.
+                </p>
+                <h3 class="h-sub-title">Ejemplo Sencillo</h3>
+                <pre class="code-block"><code>&lt;svg width="150" height="80"&gt;
+    &lt;g transform="translate(10, 10)"&gt;
+        &lt;rect width="30" height="30" fill="gray" /&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;</code></pre>
+                <h3 class="h-sub-title">Se ve así:</h3>
+                <div class="svg-showcase">
+                    <svg width="150" height="80" viewBox="0 0 150 80" class="svg-center">
+                        <g transform="translate(10, 10)">
+                            <rect width="30" height="30" fill="#9ca3af" />
+                        </g>
+                    </svg>
+                </div>
+                <p class="p-ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g" target="_blank" class="a-ref">Ver más en W3C (MDN)</a>
+                </p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="c-footer">
+        <div class="c-mw-wrap">
+            <p>&copy; 2025 Web4U. Todos los derechos reservados. | Creado con HTML y CSS Básico.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
