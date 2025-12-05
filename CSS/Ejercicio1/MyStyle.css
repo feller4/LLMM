@@ -1,0 +1,55 @@
+/* Caja general con borde */
+.cv-box {
+    width: 500px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Cabecera */
+.header h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #d1d4d8;
+    color: #284a75;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0.5pc;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+/* Títulos de sección */
+h2 {
+    font-family: Georgia, serif;
+    color: #8b1c1c;
+    font-size: 18px;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* Filas de año y descripción */
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+/* Año en negrita */
+.year {
+    font-weight: bold;
+    width: 120px;
+}
+
+/* Descripción */
+.desc {
+    flex: 1;
+}
+
+/* Texto general */
+p {
+    line-height: 1.4em;
+}
