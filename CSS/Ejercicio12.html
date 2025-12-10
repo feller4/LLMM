@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Estudiante de DAW</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  background-color: #555;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+}
+
+.navbar a:hover {
+  background-color: #777;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  flex: 30%;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.right-column {
+  flex: 70%;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Portfolio de Estudiante de DAW</h1>
+  <p>Desarrollo de Aplicaciones Web · Diseño Responsive</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Inicio</a>
+  <a href="#">Proyectos</a>
+  <a href="#">Contacto</a>
+</div>
+
+<div class="row">
+
+  <div class="left-column">
+    <div class="card">
+      <h2>Sobre mí</h2>
+      <p>Soy estudiante de Desarrollo de Aplicaciones Web (DAW). Me interesa el diseño frontend, la programación y la creación de páginas modernas y adaptativas.</p>
+    </div>
+
+    <div class="card">
+      <h3>Competencias</h3>
+      <p>HTML5 · CSS</p>
+      <p>Diseño Responsive</p>
+      <p>Bases de Datos</p>
+      <p>Programación Backend</p>
+    </div>
+  </div>
+
+  <div class="right-column">
+    <div class="card">
+      <h2>Proyecto Destacado</h2>
+      <p>Este proyecto consiste en una web responsive realizada con Flexbox y Media Queries. Se adapta a móviles, tablets y ordenadores.</p>
+    </div>
+
+    <div class="card">
+      <h2>Artículo Técnico</h2>
+      <p>Como estudiante de DAW, aprendo a construir aplicaciones web completas: desde el diseño de la interfaz hasta la lógica del servidor y la gestión de bases de datos.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>© 2025 · Estudiante de DAW</p>
+</div>
+
+</body>
+</html>
