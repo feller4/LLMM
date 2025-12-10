@@ -46,12 +46,12 @@
 ## Tema 2 - LMSGI_03_Actividades
 | Ejercicios | descripción |
 | --- | --- |
-| [Ejercicio 1](CSS/Ejercicio1) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
-| [Ejercicio 2](CSS/Ejercicio2) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
-| [Ejercicio 3](CSS/Ejercicio3) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
-| [Ejercicio 4](CSS/Ejercicio4.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
-| [Ejercicio 5](CSS/Ejercicio5.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
-| [Ejercicio 6](CSS/Ejercicio6.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
-| [Ejercicio 10](CSS/Ejercicio10.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
-| [Ejercicio 11](CSS/Ejercicio11.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
-| [Ejercicio 12](CSS/Ejercicio12.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
+| [Ejercicio 1](CSS/Ejercicio1) | Actividades de CSS.|
+| [Ejercicio 2](CSS/Ejercicio2) | Actividades de CSS.|
+| [Ejercicio 3](CSS/Ejercicio3) | Actividades de CSS.|
+| [Ejercicio 4](CSS/Ejercicio4.html) | Actividades de CSS.|
+| [Ejercicio 5](CSS/Ejercicio5.html) | Actividades de CSS.|
+| [Ejercicio 6](CSS/Ejercicio6.html) | Actividades de CSS.|
+| [Ejercicio 10](CSS/Ejercicio10.html) | Actividades de CSS.|
+| [Ejercicio 11](CSS/Ejercicio11.html) | Actividades de CSS.|
+| [Ejercicio 12](CSS/Ejercicio12.html) | Actividades de CSS.|
