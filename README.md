@@ -42,3 +42,16 @@
 | [Ejercicio 26_2](Tema1/Ejercicio26/Ejercicio26_2.html) | Creamos una página con un video |
 | [Ejercicio 27](Tema1/Ejercicio27/Ejercicio27.html) | Creamos una página con un fichero de sonido |
 | [Ejercicio 28](Tema1/Ejercicio28.html) | Creamos una página con un video incrustado de Youtube |
+
+## Tema 2 - LMSGI_03_Actividades
+| Ejercicios | descripción |
+| --- | --- |
+| [Ejercicio 1](CSS/Ejercicio1) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
+| [Ejercicio 2](CSS/Ejercicio2) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
+| [Ejercicio 3](CSS/Ejercicio3) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
+| [Ejercicio 4](CSS/Ejercicio4.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
+| [Ejercicio 5](CSS/Ejercicio5.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
+| [Ejercicio 6](CSS/Ejercicio6.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
+| [Ejercicio 10](CSS/Ejercicio10.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
+| [Ejercicio 11](CSS/Ejercicio11.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
+| [Ejercicio 12](CSS/Ejercicio12.html) | Crera una página con el texto facilitado e incluyendo las etiquetas necesarias.|
