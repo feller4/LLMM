@@ -58,6 +58,6 @@
 
 
 ## Actividad Final
-| Ejercicios | descripción |
+| Actividad | descripción |
 | --- | --- |
 | [Actividad final](WebU4) | Actividad final|
