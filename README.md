@@ -44,6 +44,7 @@
 | [Ejercicio 28](Tema1/Ejercicio28.html) | Creamos una página con un video incrustado de Youtube |
 
 ## Tema 2 - LMSGI_03_Actividades
+
 | Ejercicios | descripción |
 | --- | --- |
 | [Ejercicio 1](CSS/Ejercicio1) | Actividades de CSS.|
@@ -58,6 +59,7 @@
 
 
 ## Actividad Final
+
 | Actividad | descripción |
 | --- | --- |
 | [Actividad final](WebU4) | Actividad final|
