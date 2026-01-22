@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <link id="estilo" rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+
+    <h1>Ejercicio 3 – Cambio de imágenes</h1>
+
+    <!-- ZONA COCHES -->
+    <section>
+        <h2>Imágenes de coches</h2>
+
+        <select onchange="cambiarCoche(this.value)">
+            <option value="">Selecciona un coche</option>
+            <option value="imagenes/coche1.jpg">Coche 1</option>
+            <option value="imagenes/coche2.jpg">Coche 2</option>
+            <option value="imagenes/coche3.jpg">Coche 3</option>
+        </select>
+
+        <br><br>
+        <img id="imagenCoche" src="imagenes/coche1.jpg" alt="Coche" height="300">
+    </section>
+
+    <hr>
+
+    <!-- ZONA SPIDERMAN -->
+    <section>
+        <h2>Imágenes de Spiderman</h2>
+
+        <select onchange="cambiarSpiderman(this.value)">
+            <option value="">Selecciona un Spiderman</option>
+            <option value="imagenes/spiderman1.jpg">Spiderman 1</option>
+            <option value="imagenes/spiderman2.jpg">Spiderman 2</option>
+            <option value="imagenes/spiderman3.jpg">Spiderman 3</option>
+        </select>
+
+        <br><br>
+        <img id="imagenSpiderman" src="imagenes/spiderman1.jpg" alt="Spiderman" height="300">
+    </section>
+
+    <hr>
+
+    <!-- BOTONES DE ESTILO -->
+    <button onclick="cambiarEstilo('estilo1.css')">Estilo 1</button>
+    <button onclick="cambiarEstilo('estilo2.css')">Estilo 2</button>
+
+    <script src="js03.js"></script>
+</body>
+</html>
