@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Changing styles</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Área fija donde se muestran los cambios */
+        #areaTexto {
+            width: 100%;
+            padding: 30px;
+            margin-bottom: 20px;
+            background-color: #eaffea;
+        }
+
+        #areaTexto p {
+            margin: 0;
+        }
+
+        /* Panel de controles */
+        #controles {
+            background-color: #ff8c8c;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Área donde se aplican los estilos -->
+    <div id="areaTexto">
+        <p id="texto">WebStar</p>
+    </div>
+
+    <!-- Controles -->
+    <div id="controles">
+
+        <!-- Color del texto -->
+        color:
+        <input type="color" onchange="cambiarColor(this.value)">
+
+        <!-- Color de fondo -->
+        background-color:
+        <input type="color" onchange="cambiarFondo(this.value)">
+
+        <!-- Tamaño de fuente -->
+        font-size:
+        <input type="range" min="10" max="80" value="40"
+               onchange="cambiarTamano(this.value)">
+
+        <br><br>
+
+        <!-- Texto editable -->
+        innerHTML:
+        <input type="text" value="WebStar"
+               onchange="cambiarTexto(this.value)">
+
+        <!-- Tipo de letra -->
+        font:
+        <select onchange="cambiarFuente(this.value)">
+            <option value="Arial">Arial</option>
+            <option value="Courier">Courier</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+
+    </div>
+
+    <script>
+        function cambiarColor(color) {
+            document.getElementById("texto").style.color = color;
+        }
+
+        function cambiarFondo(color) {
+            document.getElementById("areaTexto").style.backgroundColor = color;
+        }
+
+        function cambiarTamano(tamano) {
+            document.getElementById("texto").style.fontSize = tamano + "px";
+        }
+
+        function cambiarTexto(texto) {
+            document.getElementById("texto").innerHTML = texto;
+        }
+
+        function cambiarFuente(fuente) {
+            document.getElementById("texto").style.fontFamily = fuente;
+        }
+    </script>
+
+</body>
+</html>
