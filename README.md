@@ -78,3 +78,26 @@
 | [Ejercicio 8](Javascript/Ejercicio8) | Actividades JavaScript|
 | [Ejercicio 9](Javascript/Ejercicio9) | Actividades JavaScript|
 | [Ejercicio 10](Javascript/Ejercicio10) | Actividades JavaScript|
+
+## Tema 3 - DOM
+
+| Actividad | descripción |
+| --- | --- |
+| [Ejercicio 1](DOM/ejercicio1.html) | Actividades DOM |
+| [Ejercicio 2](DOM/Ejercicio2) | Actividades DOM |
+| [Ejercicio 3](DOM/ejercicio3.html) | Actividades DOM |
+
+## Tema 3 - AdvancedJava
+
+| Actividad | descripción |
+| --- | --- |
+| [Ejercicio 1](AdvancedJava/Ejercicio1) | Actividades AdvancedJava |
+| [Ejercicio 2](AdvancedJava/ejercicio2.html) | Actividades AdvancedJava |
+| [Ejercicio 3](AdvancedJava/Ejercicio3) | Actividades AdvancedJava |
+| [Ejercicio 4](AdvancedJava/ejercicio4.html) | Actividades AdvancedJava |
+| [Ejercicio 5](AdvancedJava/ejercicio5.html) | Actividades AdvancedJava |
+| [Ejercicio 6](AdvancedJava/ejercicio6.html) | Actividades AdvancedJava |
+
+
+
+
