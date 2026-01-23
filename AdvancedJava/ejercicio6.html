@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Captcha</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #captcha {
+            font-size: 30px;
+            font-weight: bold;
+            background-color: #eee;
+            padding: 10px;
+            display: inline-block;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Generar CAPTCHA</h1>
+
+<p id="captcha"></p>
+
+<br><br>
+
+<input type="text" id="entrada" placeholder="Escribe el captcha">
+<button onclick="comprobarCaptcha()">Comprobar</button>
+<button onclick="generarCaptcha()">Nuevo captcha</button>
+
+<p id="resultado"></p>
+
+<script>
+    var codigo = "";
+
+    function generarCaptcha() {
+        var caracteres = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+        codigo = "";
+
+        for (var i = 0; i < 5; i++) {
+            var aleatorio = Math.floor(Math.random() * caracteres.length);
+            codigo += caracteres[aleatorio];
+        }
+
+        document.getElementById("captcha").innerHTML = codigo;
+        document.getElementById("resultado").innerHTML = "";
+        document.getElementById("entrada").value = "";
+    }
+
+    function comprobarCaptcha() {
+        var textoUsuario = document.getElementById("entrada").value;
+
+        if (textoUsuario === codigo) {
+            document.getElementById("resultado").innerHTML = "Captcha correcto ✅";
+        } else {
+            document.getElementById("resultado").innerHTML = "Captcha incorrecto ❌";
+        }
+    }
+
+    // Generar captcha al cargar la página
+    generarCaptcha();
+</script>
+
+</body>
+</html>
+
