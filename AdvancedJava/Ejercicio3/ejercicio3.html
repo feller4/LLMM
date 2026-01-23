@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Changing Style Sheet</title>
+
+    <!-- Hoja de estilo que se cambiará -->
+    <link id="estilo" rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+
+    <h2>Cambiar hoja de estilo</h2>
+
+    <select onchange="cambiarEstilo(this.value)">
+        <option value="estilo1.css">Estilo 1</option>
+        <option value="estilo2.css">Estilo 2</option>
+        <option value="estilo3.css">Estilo 3</option>
+    </select>
+
+    <br><br>
+
+    <!-- Estructura HTML dada -->
+    <div id="container" style="width:500px">
+
+        <div id="header">
+            <h1>Main Title of Web Page</h1>
+        </div>
+
+        <div id="menu">
+            <b>Menu</b><br>
+            HTML<br>
+            CSS<br>
+            JavaScript
+        </div>
+
+        <div id="content">
+            Content goes here
+        </div>
+
+        <div id="footer">
+            Copyright © W3Schools.com
+        </div>
+
+    </div>
+
+    <script>
+        function cambiarEstilo(nombre) {
+            document.getElementById("estilo").href = nombre;
+        }
+    </script>
+
+</body>
+</html>
