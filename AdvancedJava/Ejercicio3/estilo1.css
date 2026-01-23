@@ -1,0 +1,25 @@
+#header {
+    background-color: orange;
+    padding: 10px;
+}
+
+#menu {
+    background-color: yellow;
+    width: 100px;
+    float: left;
+    padding: 10px;
+}
+
+#content {
+    background-color: #eeeeee;
+    margin-left: 120px;
+    padding: 10px;
+    height: 200px;
+}
+
+#footer {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
