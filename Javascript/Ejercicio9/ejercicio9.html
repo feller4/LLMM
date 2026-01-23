@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de temperatura</title>
+
+    <script>
+        // Fahrenheit a Celsius
+        function convertirAFahrenheitACelsius() {
+            var f = document.getElementById("tbf").value;
+            var c = (5 / 9) * (f - 32);
+            document.getElementById("tbc").value = c;
+        }
+
+        // Celsius a Fahrenheit
+        function convertirACelsiusAFahrenheit() {
+            var c = document.getElementById("tbc").value;
+            var f = (c * 9 / 5) + 32;
+            document.getElementById("tbf").value = f;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Conversor de temperatura</h2>
+
+    <label for="tbf">Fahrenheit:</label>
+    <input type="text" id="tbf">
+    <br><br>
+
+    <label for="tbc">Celsius:</label>
+    <input type="text" id="tbc">
+    <br><br>
+
+    <button onclick="convertirAFahrenheitACelsius()">
+        Fahrenheit → Celsius
+    </button>
+
+    <button onclick="convertirACelsiusAFahrenheit()">
+        Celsius → Fahrenheit
+    </button>
+
+</body>
+</html>
