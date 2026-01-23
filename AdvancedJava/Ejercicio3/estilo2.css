@@ -1,0 +1,26 @@
+#header {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu {
+    background-color: lightgray;
+    width: 120px;
+    float: left;
+    padding: 10px;
+}
+
+#content {
+    background-color: white;
+    margin-left: 140px;
+    padding: 10px;
+    height: 200px;
+}
+
+#footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
