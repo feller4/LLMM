@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game España</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #juego {
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .carta {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .oculta {
+            background-color: #999;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Juego de memoria – España 🇪🇸</h1>
+<p>Tiempo: <span id="tiempo">0</span> segundos</p>
+
+<div id="juego"></div>
+
+<script>
+    // Palabras relacionadas con España (2 parejas)
+    var palabras = ["Sol", "Toro", "Sol", "Toro"];
+
+    // Mezclar las cartas
+    palabras.sort(function () {
+        return Math.random() - 0.5;
+    });
+
+    var primera = null;
+    var segunda = null;
+    var bloqueado = false;
+    var aciertos = 0;
+
+    var inicio = Date.now();
+
+    // Crear las cartas
+    for (var i = 0; i < palabras.length; i++) {
+        var carta = document.createElement("div");
+        carta.className = "carta oculta";
+        carta.innerHTML = palabras[i];
+        carta.dataset.valor = palabras[i];
+
+        carta.onclick = function () {
+            girarCarta(this);
+        };
+
+        document.getElementById("juego").appendChild(carta);
+    }
+
+    function girarCarta(carta) {
+        if (bloqueado || !carta.classList.contains("oculta")) {
+            return;
+        }
+
+        carta.classList.remove("oculta");
+
+        if (primera === null) {
+            primera = carta;
+        } else {
+            segunda = carta;
+            comprobar();
+        }
+    }
+
+    function comprobar() {
+        if (primera.dataset.valor === segunda.dataset.valor) {
+            aciertos++;
+            primera = null;
+            segunda = null;
+
+            if (aciertos === 2) {
+                var tiempoFinal = Math.floor((Date.now() - inicio) / 1000);
+                alert("¡Has ganado en " + tiempoFinal + " segundos!");
+            }
+        } else {
+            bloqueado = true;
+            setTimeout(function () {
+                primera.classList.add("oculta");
+                segunda.classList.add("oculta");
+                primera = null;
+                segunda = null;
+                bloqueado = false;
+            }, 3000);
+        }
+    }
+
+    // Contador de tiempo
+    setInterval(function () {
+        var ahora = Math.floor((Date.now() - inicio) / 1000);
+        document.getElementById("tiempo").innerHTML = ahora;
+    }, 1000);
+</script>
+
+</body>
+</html>
