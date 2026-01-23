@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla de multiplicar</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tabla de multiplicar</h1>
+
+    <label>Introduce un número:</label>
+    <input type="text" id="numero">
+    <button onclick="mostrarTabla()">Mostrar tabla</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function mostrarTabla() {
+            var num = Number(document.getElementById("numero").value);
+            var tabla = "<table>";
+            tabla += "<tr><th>Multiplicación</th><th>Resultado</th></tr>";
+
+            for (var i = 1; i <= 10; i++) {
+                tabla += "<tr>";
+                tabla += "<td>" + num + " x " + i + "</td>";
+                tabla += "<td>" + (num * i) + "</td>";
+                tabla += "</tr>";
+            }
+
+            tabla += "</table>";
+
+            document.getElementById("resultado").innerHTML = tabla;
+        }
+    </script>
+
+</body>
+</html>
