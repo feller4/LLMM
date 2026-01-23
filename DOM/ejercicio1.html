@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso al DOM</title>
+</head>
+<body>
+
+    <h1>Párrafos</h1>
+
+    <p class="texto">Este es el primer párrafo</p>
+    <p class="texto">Este es el segundo párrafo</p>
+    <p class="texto">Este es el tercer párrafo</p>
+
+    <button onclick="mostrarParrafos()">Mostrar contenido</button>
+
+    <h2>Contenido en el div</h2>
+    <div id="resultado" style="border:1px solid black; padding:10px;">
+        Aquí aparecerán los párrafos
+    </div>
+
+    <script>
+        function mostrarParrafos() {
+            // Accedemos a los párrafos por su clase
+            var parrafos = document.getElementsByClassName("texto");
+
+            var contenido = "";
+
+            // Recorremos todos los párrafos
+            for (var i = 0; i < parrafos.length; i++) {
+                contenido += parrafos[i].innerHTML + "<br>";
+            }
+
+            // Mostramos el contenido en el div
+            document.getElementById("resultado").innerHTML = contenido;
+        }
+    </script>
+
+</body>
+</html>
