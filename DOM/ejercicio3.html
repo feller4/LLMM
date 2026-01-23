@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar elementos</title>
+</head>
+<body>
+
+    <h1>Eliminar elementos de una lista</h1>
+
+    <ul id="miLista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <button onclick="eliminarElemento()">Eliminar último elemento</button>
+
+    <script>
+        function eliminarElemento() {
+            // Accedemos a la lista
+            var lista = document.getElementById("miLista");
+
+            // Comprobamos que haya elementos
+            if (lista.children.length > 0) {
+                // Eliminamos el último elemento
+                lista.removeChild(lista.lastElementChild);
+            }
+        }
+    </script>
+
+</body>
+</html>
