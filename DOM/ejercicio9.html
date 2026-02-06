@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="iniciar()">Iniciar</button>
+<button onclick="detener()">Detener</button>
+
+<script>
+let temporizador;
+
+function iniciar() {
+  temporizador = setTimeout(function() {
+    alert("Han pasado 5 segundos");
+  }, 5000);
+}
+
+function detener() {
+  clearTimeout(temporizador);
+}
+</script>
+
+</body>
+</html>
