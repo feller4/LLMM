@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul id="lista">
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
+</ul>
+
+<button onclick="borrar()">Borrar último</button>
+
+<script>
+function borrar() {
+  let lista = document.getElementById("lista");
+  if (lista.lastElementChild) {
+    lista.removeChild(lista.lastElementChild);
+  }
+}
+</script>
+
+</body>
+</html>
