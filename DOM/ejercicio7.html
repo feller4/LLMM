@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="mostrarImagen()">Mostrar coche</button>
+
+<div id="zona"></div>
+
+<script>
+function mostrarImagen() {
+  let img = document.createElement("img");
+  img.src = "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg";
+  img.width = 300;
+
+  document.getElementById("zona").appendChild(img);
+}
+</script>
+
+</body>
+</html>
