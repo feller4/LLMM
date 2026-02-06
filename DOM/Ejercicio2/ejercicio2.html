@@ -1,34 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Crear elementos</title>
-</head>
+<html>
 <body>
 
-    <h1>Crear imagen con JavaScript</h1>
+<form onsubmit="saludar(event)">
+  Nombre: <input type="text" id="nombre"><br><br>
+  Apellidos: <input type="text" id="apellidos"><br><br>
+  <button type="submit">Enviar</button>
+</form>
 
-    <button onclick="crearImagen()">Añadir imagen</button>
+<p id="mensaje"></p>
 
-    <br><br>
+<script>
+function saludar(event) {
+  event.preventDefault();
 
-    <div id="contenedor" style="border:1px solid black; padding:10px;">
-        <!-- Aquí se añadirá la imagen -->
-    </div>
+  let nombre = document.getElementById("nombre").value;
+  let apellidos = document.getElementById("apellidos").value;
 
-    <script>
-        function crearImagen() {
-            // 1. Crear el elemento img
-            var imagen = document.createElement("img");
-
-            // 2. Asignar atributos
-            imagen.src = "imagenes/coche1.jpg";
-            imagen.width = 300;
-
-            // 3. Añadir la imagen al div
-            document.getElementById("contenedor").appendChild(imagen);
-        }
-    </script>
+  document.getElementById("mensaje").innerText =
+    "Hola " + nombre + " " + apellidos +
+    ", gracias por completar el formulario.";
+}
+</script>
 
 </body>
 </html>
