@@ -1,34 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Eliminar elementos</title>
-</head>
+<html>
 <body>
 
-    <h1>Eliminar elementos de una lista</h1>
+<div id="contenedor"></div>
 
-    <ul id="miLista">
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ul>
+<button onclick="agregarImagen()">Agregar imagen</button>
 
-    <button onclick="eliminarElemento()">Eliminar último elemento</button>
+<script>
+function agregarImagen() {
+  let img = document.createElement("img");
+  img.src = "https://via.placeholder.com/150";
+  img.width = 150;
 
-    <script>
-        function eliminarElemento() {
-            // Accedemos a la lista
-            var lista = document.getElementById("miLista");
-
-            // Comprobamos que haya elementos
-            if (lista.children.length > 0) {
-                // Eliminamos el último elemento
-                lista.removeChild(lista.lastElementChild);
-            }
-        }
-    </script>
+  document.getElementById("contenedor").appendChild(img);
+}
+</script>
 
 </body>
 </html>
