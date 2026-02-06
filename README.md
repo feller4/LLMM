@@ -86,6 +86,12 @@
 | [Ejercicio 1](DOM/ejercicio1.html) | Actividades DOM |
 | [Ejercicio 2](DOM/Ejercicio2) | Actividades DOM |
 | [Ejercicio 3](DOM/ejercicio3.html) | Actividades DOM |
+| [Ejercicio 4](DOM/ejercicio4.html) | Actividades DOM |
+| [Ejercicio 5](DOM/ejercicio5.html) | Actividades DOM |
+| [Ejercicio 6](DOM/ejercicio6.html) | Actividades DOM |
+| [Ejercicio 7](DOM/ejercicio7.html) | Actividades DOM |
+| [Ejercicio 8](DOM/ejercicio8.html) | Actividades DOM |
+| [Ejercicio 9](DOM/ejercicio9.html) | Actividades DOM |
 
 ## Tema 3 - AdvancedJava
 
