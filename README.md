@@ -105,5 +105,9 @@
 | [Ejercicio 6](AdvancedJava/ejercicio6.html) | Actividades AdvancedJava |
 
 
+## Tema 3 - JAVASCRIPT
 
+| Actividad | descripción |
+| --- | --- |
+| [Mi sitio web](Mi-sitio-web) | Actividades del segundo trimestre|
 
