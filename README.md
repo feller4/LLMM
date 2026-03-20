@@ -110,5 +110,5 @@
 | Actividad | descripción |
 | --- | --- |
 | [Mi sitio web](Mi-sitio-web) | Contenido|
-| [Enlace](https://feller4.github.io/LLMM/) | Actividades del segundo trimestre|
+| [Enlace]([https://feller4.github.io/LLMM/](https://feller4.github.io/LLMM/Mi-sitio-web/)) | Actividades del segundo trimestre|
 
