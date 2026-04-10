@@ -1,0 +1,17 @@
+(: Nombre de todos los módulos :)
+/ies/modulos/modulo/nombre
+
+(: Nombre de los módulos del ciclo ASIR :)
+/ies/modulos/modulo[ciclo="ASIR"]/nombre
+
+(: Nombre de los módulos de segundo curso :)
+/ies/modulos/modulo[curso=2]/nombre
+
+(: Nombre de los módulos con menos de 5 horas semanales :)
+/ies/modulos/modulo[horasSemanales < 5]/nombre
+
+(: Nombre de los módulos del primer curso de ASIR :)
+/ies/modulos/modulo[curso=1 and ciclo="ASIR"]/nombre
+
+(: Horas semanales de los módulos con más de 3 horas :)
+/ies/modulos/modulo[horasSemanales > 3]/horasSemanales
