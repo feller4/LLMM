@@ -1,0 +1,85 @@
+
+// 🔹 Título del primer libro
+console.log("Título del primer libro:");
+console.log(document.getElementsByTagName("title")[0].childNodes[0].nodeValue);
+
+
+// 🔹 Año del primer libro
+console.log("\nAño del primer libro:");
+console.log(document.getElementsByTagName("year")[0].childNodes[0].nodeValue);
+
+
+// 🔹 Precio del segundo libro
+console.log("\nPrecio del segundo libro:");
+console.log(document.getElementsByTagName("price")[1].childNodes[0].nodeValue);
+
+
+// 🔹 Autor del primer libro
+console.log("\nAutor del primer libro:");
+console.log(document.getElementsByTagName("author")[0].childNodes[0].nodeValue);
+
+
+// 🔹 Primer autor del tercer libro
+console.log("\nPrimer autor del tercer libro:");
+console.log(
+  document.getElementsByTagName("book")[2]
+          .getElementsByTagName("author")[0]
+          .childNodes[0].nodeValue
+);
+
+
+// 🔹 Segundo autor del tercer libro
+console.log("\nSegundo autor del tercer libro:");
+console.log(
+  document.getElementsByTagName("book")[2]
+          .getElementsByTagName("author")[1]
+          .childNodes[0].nodeValue
+);
+
+
+// 🔹 Nombre del primer atributo del primer libro
+console.log("\nNombre del primer atributo del primer libro:");
+console.log(
+  document.getElementsByTagName("book")[0].attributes[0].nodeName
+);
+
+
+// 🔹 Valor del primer atributo del primer libro
+console.log("\nValor del primer atributo del primer libro:");
+console.log(
+  document.getElementsByTagName("book")[0].attributes[0].nodeValue
+);
+
+
+// 🔹 Número de autores del tercer libro
+console.log("\nNúmero de autores del tercer libro:");
+console.log(
+  document.getElementsByTagName("book")[2]
+          .getElementsByTagName("author").length
+);
+
+
+// 🔹 Mostrar todos los autores del tercer libro
+console.log("\nAutores del tercer libro:");
+let autores = document.getElementsByTagName("book")[2]
+                      .getElementsByTagName("author");
+
+for (let i = 0; i < autores.length; i++) {
+  console.log(autores[i].childNodes[0].nodeValue);
+}
+
+
+// 🔹 Número de atributos del cuarto libro
+console.log("\nNúmero de atributos del cuarto libro:");
+console.log(
+  document.getElementsByTagName("book")[3].attributes.length
+);
+
+
+// 🔹 Mostrar valor de los atributos del cuarto libro
+console.log("\nValores de los atributos del cuarto libro:");
+let atributos = document.getElementsByTagName("book")[3].attributes;
+
+for (let i = 0; i < atributos.length; i++) {
+  console.log(atributos[i].nodeValue);
+}
