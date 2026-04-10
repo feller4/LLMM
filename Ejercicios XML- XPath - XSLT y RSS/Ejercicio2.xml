@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos SYSTEM "alumnos.dtd">
+
+<alumnos>
+
+    <alumno num_alumno="a1" ayuda="a2" sexo="hombre">
+        <nombre>Juan</nombre>
+        <apellidos>Rodríguez Martín</apellidos>
+        <domicilio>C/ San Sebastián, 7, 3ºC - Huelva, 21005</domicilio>
+
+        <telefono pertenece="propio">612345678</telefono>
+        <telefono pertenece="padre">654321012</telefono>
+
+        <altura>178</altura>
+        <equipo>La Marisma Juniors</equipo>
+
+        <aficion>Videojuegos</aficion>
+        <aficion>Fútbol</aficion>
+
+        <provincia>Huelva</provincia>
+
+        <comentarios>Muy buen estudiante</comentarios>
+
+        <notas>
+            <evaluacion>1ª Evaluación</evaluacion>
+            <calificacion>9</calificacion>
+            <evaluacion>2ª Evaluación</evaluacion>
+            <calificacion>8</calificacion>
+        </notas>
+    </alumno>
+
+    <alumno num_alumno="a2">
+        <nombre>Marta</nombre>
+        <apellidos>González Fernández</apellidos>
+        <domicilio>C/ Artesanos, 15</domicilio>
+
+        <telefono pertenece="propio">678912345</telefono>
+
+        <pais>España</pais>
+
+        <notas>
+            <evaluacion>1ª Evaluación</evaluacion>
+            <calificacion>7</calificacion>
+        </notas>
+    </alumno>
+
+</alumnos>
