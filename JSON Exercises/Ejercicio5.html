@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>NASA APOD</h2>
+
+<p id="date"></p>
+<p id="explanation"></p>
+<p id="url"></p>
+
+<img id="imagen" width="400">
+
+<script>
+const xhttp = new XMLHttpRequest();
+
+xhttp.onload = function() {
+
+  const myObj = JSON.parse(this.responseText);
+
+  document.getElementById("date").innerHTML =
+    "Fecha: " + myObj.date;
+
+  document.getElementById("explanation").innerHTML =
+    "Explicación: " + myObj.explanation;
+
+  document.getElementById("url").innerHTML =
+    "URL: " + myObj.url;
+
+  document.getElementById("imagen").src =
+    myObj.url;
+
+};
+
+xhttp.open("GET", "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2020-05-01");
+xhttp.send();
+</script>
+
+</body>
+</html>
