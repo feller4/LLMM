@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inmuebles [
+
+<!ELEMENT inmuebles (agencias, propietarios, propiedades)>
+
+<!ELEMENT agencias (agencia+)>
+<!ELEMENT agencia (nombre, inauguracion)>
+<!ATTLIST agencia codigo ID #REQUIRED>
+
+<!ELEMENT propietarios (propietario*)>
+<!ELEMENT propietario (nombre, apellidos)>
+
+<!ELEMENT propiedades (propiedad+)>
+<!ELEMENT propiedad (direccion, precio)>
+<!ATTLIST propiedad agencia IDREF #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT inauguracion (#PCDATA)>
+
+]>
+
+<inmuebles>
+    <agencias>
+        <agencia codigo="a1">
+            <nombre>Vendo Todo</nombre>
+            <inauguracion>1990-05-01</inauguracion>
+        </agencia>
+
+        <agencia codigo="a2">
+            <nombre>Alquilo Todo</nombre>
+            <inauguracion>1995-07-03</inauguracion>
+        </agencia>
+    </agencias>
+
+    <propietarios>
+        <propietario>
+            <nombre>Pepe</nombre>
+            <apellidos>López</apellidos>
+        </propietario>
+    </propietarios>
+
+    <propiedades>
+        <propiedad agencia="a1">
+            <direccion>Paseo de la Fuente 123</direccion>
+            <precio>150000.25</precio>
+        </propiedad>
+
+        <propiedad agencia="a2">
+            <direccion>Avenida de la Marisma 45</direccion>
+            <precio>75000.99</precio>
+        </propiedad>
+    </propiedades>
+
+</inmuebles>
