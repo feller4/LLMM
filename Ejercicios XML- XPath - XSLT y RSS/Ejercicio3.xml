@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedidos SYSTEM "pedidos.dtd">
+
+<pedidos>
+
+    <pedido>
+        <empresa CIF="CIF_A5482910" sector="Metalurgia" actividad="Forja Embuticion">
+            Metales Garrido
+        </empresa>
+
+        <productos>
+            <producto numproducto="p023">Taladro</producto>
+            <producto numproducto="p149">Amoladora</producto>
+        </productos>
+
+        <fecha>09/01/2019</fecha>
+
+        <factura numfactura="f001" cliente="CIF_A5482910" productos="p023 p149">
+            <emisor>&MiEmpresa;</emisor>
+            <total>485€</total>
+            <fecha>09/01/2019</fecha>
+        </factura>
+    </pedido>
+
+
+    <pedido>
+        <persona NIF="DNI_29740256F">Juan Contreras Gomez</persona>
+
+        <productos>
+            <producto numproducto="p059">Sierra ingleteadora</producto>
+        </productos>
+
+        <fecha>15/01/2019</fecha>
+
+        <factura numfactura="f002" cliente="DNI_29740256F" productos="p059">
+            <emisor>&MiEmpresa;</emisor>
+            <total>379€</total>
+            <fecha>15/01/2019</fecha>
+        </factura>
+    </pedido>
+
+
+    <pedido>
+        <empresa CIF="CIF_A5849912" actividad="Carpinteria Metalica">
+            Puertas Metálicas Manolo
+        </empresa>
+
+        <productos>
+            <producto numproducto="p104">Nivel láser</producto>
+            <producto numproducto="p097">Fresadora</producto>
+            <producto numproducto="p012">Rotomartillo</producto>
+        </productos>
+
+        <fecha>23/01/2019</fecha>
+    </pedido>
+
+</pedidos>
