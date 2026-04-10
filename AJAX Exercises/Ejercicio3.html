@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 3 XML DOM</title>
+
+<style>
+body {
+  font-family: Arial;
+}
+
+button {
+  margin: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Empresas de CDs</h1>
+
+<div id="empresas"></div>
+
+<h2>Información</h2>
+<div id="info"></div>
+
+<script>
+const xhttp = new XMLHttpRequest();
+
+xhttp.onload = function() {
+
+  const xmlDoc = this.responseXML;
+  const cds = xmlDoc.getElementsByTagName("CD");
+
+  let companies = [];
+
+  for (let i = 0; i < cds.length; i++) {
+    let company = cds[i].getElementsByTagName("COMPANY")[0].textContent;
+
+    if (!companies.includes(company)) {
+      companies.push(company);
+    }
+  }
+
+  let botones = "";
+
+  for (let i = 0; i < companies.length; i++) {
+    botones += "<button onclick='mostrar(\"" + companies[i] + "\")'>" + companies[i] + "</button>";
+  }
+
+  document.getElementById("empresas").innerHTML = botones;
+
+  window.mostrar = function(nombreEmpresa) {
+
+    let resultado = "";
+
+    for (let i = 0; i < cds.length; i++) {
+
+      let company = cds[i].getElementsByTagName("COMPANY")[0].textContent;
+
+      if (company === nombreEmpresa) {
+        let title = cds[i].getElementsByTagName("TITLE")[0].textContent;
+        let artist = cds[i].getElementsByTagName("ARTIST")[0].textContent;
+
+        resultado += title + " - " + artist + "<br>";
+      }
+    }
+
+    document.getElementById("info").innerHTML = resultado;
+  };
+
+};
+
+xhttp.open("GET", "https://www.w3schools.com/xml/cd_catalog.xml");
+xhttp.send();
+</script>
+
+</body>
+</html>
