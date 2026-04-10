@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.divTable {
+  display: table;
+  width: 100%;
+  border: 1px solid black;
+}
+.divRow {
+  display: table-row;
+}
+.divCell, .divHeader {
+  display: table-cell;
+  border: 1px solid black;
+  padding: 8px;
+}
+.divHeader {
+  font-weight: bold;
+  background-color: #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Tabla normal</h2>
+<div id="tabla"></div>
+
+<h2>Tabla con DIV</h2>
+<div id="tablaDiv"></div>
+
+<script>
+const xhttp = new XMLHttpRequest();
+
+xhttp.onload = function() {
+
+  const xmlDoc = this.responseXML;
+  const cds = xmlDoc.getElementsByTagName("CD");
+
+  // =========================
+  // TABLA NORMAL
+  // =========================
+  let tabla = "<table border='1'>";
+  tabla += "<tr><th>Country</th><th>Company</th><th>Price</th><th>Year</th></tr>";
+
+  for (let i = 0; i < cds.length; i++) {
+    let country = cds[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue;
+    let company = cds[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue;
+    let price = cds[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue;
+    let year = cds[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+
+    tabla += "<tr>";
+    tabla += "<td>" + country + "</td>";
+    tabla += "<td>" + company + "</td>";
+    tabla += "<td>" + price + "</td>";
+    tabla += "<td>" + year + "</td>";
+    tabla += "</tr>";
+  }
+
+  tabla += "</table>";
+  document.getElementById("tabla").innerHTML = tabla;
+
+
+  // =========================
+  // TABLA CON DIV
+  // =========================
+  let divTable = "<div class='divTable'>";
+
+  divTable += "<div class='divRow'>";
+  divTable += "<div class='divHeader'>Country</div>";
+  divTable += "<div class='divHeader'>Company</div>";
+  divTable += "<div class='divHeader'>Price</div>";
+  divTable += "<div class='divHeader'>Year</div>";
+  divTable += "</div>";
+
+  for (let i = 0; i < cds.length; i++) {
+    let country = cds[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue;
+    let company = cds[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue;
+    let price = cds[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue;
+    let year = cds[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+
+    divTable += "<div class='divRow'>";
+    divTable += "<div class='divCell'>" + country + "</div>";
+    divTable += "<div class='divCell'>" + company + "</div>";
+    divTable += "<div class='divCell'>" + price + "</div>";
+    divTable += "<div class='divCell'>" + year + "</div>";
+    divTable += "</div>";
+  }
+
+  divTable += "</div>";
+  document.getElementById("tablaDiv").innerHTML = divTable;
+
+};
+
+xhttp.open("GET", "https://www.w3schools.com/xml/cd_catalog.xml");
+xhttp.send();
+</script>
+
+</body>
+</html>
