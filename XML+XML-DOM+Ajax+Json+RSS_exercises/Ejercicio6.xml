@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letter>
+  <sender>
+    <name>Juan Pérez</name>
+    <address>Huelva, España</address>
+  </sender>
+
+  <receiver>
+    <name>María López</name>
+    <address>Madrid, España</address>
+  </receiver>
+
+  <date>2026-04-10</date>
+
+  <body>
+    Estimada María,
+    Espero que estés bien. Te escribo para saludarte.
+  </body>
+
+  <signature>
+    Juan Pérez
+  </signature>
+</letter>
