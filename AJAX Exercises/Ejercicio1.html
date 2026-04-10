@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<title>Ejercicio 1 XML DOM</title>
+
 <style>
+body {
+  font-family: Arial;
+}
+
 .divTable {
   display: table;
   width: 100%;
   border: 1px solid black;
+  margin-top: 20px;
 }
 .divRow {
   display: table-row;
@@ -19,10 +27,21 @@
   font-weight: bold;
   background-color: #ddd;
 }
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+td, th {
+  border: 1px solid black;
+  padding: 8px;
+}
 </style>
+
 </head>
 
 <body>
+
+<h1>Ejercicio 1 - XML DOM</h1>
 
 <h2>Tabla normal</h2>
 <div id="tabla"></div>
@@ -38,54 +57,52 @@ xhttp.onload = function() {
   const xmlDoc = this.responseXML;
   const cds = xmlDoc.getElementsByTagName("CD");
 
-  // =========================
-  // TABLA NORMAL
-  // =========================
-  let tabla = "<table border='1'>";
+  let tabla = "<table>";
   tabla += "<tr><th>Country</th><th>Company</th><th>Price</th><th>Year</th></tr>";
 
   for (let i = 0; i < cds.length; i++) {
-    let country = cds[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue;
-    let company = cds[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue;
-    let price = cds[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue;
-    let year = cds[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+    let country = cds[i].getElementsByTagName("COUNTRY")[0]?.textContent;
+    let company = cds[i].getElementsByTagName("COMPANY")[0]?.textContent;
+    let price = cds[i].getElementsByTagName("PRICE")[0]?.textContent;
+    let year = cds[i].getElementsByTagName("YEAR")[0]?.textContent;
 
-    tabla += "<tr>";
-    tabla += "<td>" + country + "</td>";
-    tabla += "<td>" + company + "</td>";
-    tabla += "<td>" + price + "</td>";
-    tabla += "<td>" + year + "</td>";
-    tabla += "</tr>";
+    tabla += `<tr>
+      <td>${country}</td>
+      <td>${company}</td>
+      <td>${price}</td>
+      <td>${year}</td>
+    </tr>`;
   }
 
   tabla += "</table>";
   document.getElementById("tabla").innerHTML = tabla;
 
 
-  // =========================
-  // TABLA CON DIV
-  // =========================
   let divTable = "<div class='divTable'>";
 
-  divTable += "<div class='divRow'>";
-  divTable += "<div class='divHeader'>Country</div>";
-  divTable += "<div class='divHeader'>Company</div>";
-  divTable += "<div class='divHeader'>Price</div>";
-  divTable += "<div class='divHeader'>Year</div>";
-  divTable += "</div>";
+  divTable += `
+    <div class='divRow'>
+      <div class='divHeader'>Country</div>
+      <div class='divHeader'>Company</div>
+      <div class='divHeader'>Price</div>
+      <div class='divHeader'>Year</div>
+    </div>
+  `;
 
   for (let i = 0; i < cds.length; i++) {
-    let country = cds[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue;
-    let company = cds[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue;
-    let price = cds[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue;
-    let year = cds[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+    let country = cds[i].getElementsByTagName("COUNTRY")[0]?.textContent;
+    let company = cds[i].getElementsByTagName("COMPANY")[0]?.textContent;
+    let price = cds[i].getElementsByTagName("PRICE")[0]?.textContent;
+    let year = cds[i].getElementsByTagName("YEAR")[0]?.textContent;
 
-    divTable += "<div class='divRow'>";
-    divTable += "<div class='divCell'>" + country + "</div>";
-    divTable += "<div class='divCell'>" + company + "</div>";
-    divTable += "<div class='divCell'>" + price + "</div>";
-    divTable += "<div class='divCell'>" + year + "</div>";
-    divTable += "</div>";
+    divTable += `
+      <div class='divRow'>
+        <div class='divCell'>${country}</div>
+        <div class='divCell'>${company}</div>
+        <div class='divCell'>${price}</div>
+        <div class='divCell'>${year}</div>
+      </div>
+    `;
   }
 
   divTable += "</div>";
