@@ -1,0 +1,17 @@
+// A)
+<test>This is our first element!</test>
+
+// B)
+<book>
+  <chapters>
+    <chapter>Chapter 1</chapter>
+    <chapter>Chapter 2</chapter>
+  </chapters>
+
+  <author>
+    <name>John Doe</name>
+    <address>123 Main Street</address>
+  </author>
+</book>
+// C)
+<entry no="24" date="27.10.2004"></entry>
