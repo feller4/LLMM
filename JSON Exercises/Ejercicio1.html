@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ejercicio 1 JSON</h2>
+<div id="demo"></div>
+
+<script>
+const myObj = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+let txt = "";
+
+for (let x in myObj) {
+  txt += x + ": " + myObj[x] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>
