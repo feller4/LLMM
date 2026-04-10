@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE DAW [
+    <!ELEMENT DAW (Modulos)>
+    <!ELEMENT Modulos (Modulo*)>
+    <!ELEMENT Modulo (Nombre, Descripcion, Codigo, Profesor, Fechas)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Descripcion (#PCDATA)>
+    <!ELEMENT Codigo (#PCDATA)>
+    <!ELEMENT Profesor (Nombre_Profesor, Apellidos_Profesor)>
+    <!ELEMENT Nombre_Profesor (#PCDATA)>
+    <!ELEMENT Apellidos_Profesor (#PCDATA)>
+    <!ELEMENT Fechas (Inicio, Fin)>
+    <!ELEMENT Inicio (Dia, Mes, Anio)>
+    <!ELEMENT Fin (Dia, Mes, Anio)>
+    <!ELEMENT Dia (#PCDATA)>
+    <!ELEMENT Mes (#PCDATA)>
+    <!ELEMENT Anio (#PCDATA)>
+
+    <!ENTITY dia_inicio "17">
+    <!ENTITY mes_inicio "Septiembre">
+    <!ENTITY anio_inicio "2018">
+    <!ENTITY dia_fin "25">
+    <!ENTITY mes_fin "Junio">
+    <!ENTITY anio_fin "2019">
+]>
+
+<DAW>
+    <Modulos>
+
+        <Modulo>
+            <Nombre>Sistemas informáticos</Nombre>
+            <Descripcion>Instalación y mantenimiento de sistemas y redes</Descripcion>
+            <Codigo>0483</Codigo>
+            <Profesor>
+                <Nombre_Profesor>Inmaculada</Nombre_Profesor>
+                <Apellidos_Profesor>García Saz</Apellidos_Profesor>
+            </Profesor>
+            <Fechas>
+                <Inicio>
+                    <Dia>&dia_inicio;</Dia>
+                    <Mes>&mes_inicio;</Mes>
+                    <Anio>&anio_inicio;</Anio>
+                </Inicio>
+                <Fin>
+                    <Dia>&dia_fin;</Dia>
+                    <Mes>&mes_fin;</Mes>
+                    <Anio>&anio_fin;</Anio>
+                </Fin>
+            </Fechas>
+        </Modulo>
+
+        <Modulo>
+            <Nombre>Bases de datos</Nombre>
+            <Descripcion>Gestión de bases de datos</Descripcion>
+            <Codigo>0484</Codigo>
+            <Profesor>
+                <Nombre_Profesor>Eduardo</Nombre_Profesor>
+                <Apellidos_Profesor>Cerro Aldea</Apellidos_Profesor>
+            </Profesor>
+            <Fechas>
+                <Inicio>
+                    <Dia>&dia_inicio;</Dia>
+                    <Mes>&mes_inicio;</Mes>
+                    <Anio>&anio_inicio;</Anio>
+                </Inicio>
+                <Fin>
+                    <Dia>&dia_fin;</Dia>
+                    <Mes>&mes_fin;</Mes>
+                    <Anio>&anio_fin;</Anio>
+                </Fin>
+            </Fechas>
+        </Modulo>
+
+    </Modulos>
+</DAW>
