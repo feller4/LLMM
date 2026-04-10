@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ejercicio 3 - XML DOM</h2>
+
+<p id="titulo"></p>
+<p id="titulos"></p>
+<p id="atributos"></p>
+<p id="autores"></p>
+<div id="tabla"></div>
+
+<script>
+const xhttp = new XMLHttpRequest();
+
+xhttp.onload = function() {
+
+  const xmlDoc = this.responseXML;
+
+  document.getElementById("titulo").innerHTML =
+    xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+
+  let titulos = "";
+  let t = xmlDoc.getElementsByTagName("title");
+
+  for (let i = 0; i < t.length; i++) {
+    titulos += t[i].childNodes[0].nodeValue + "<br>";
+  }
+
+  document.getElementById("titulos").innerHTML = titulos;
+
+
+  document.getElementById("atributos").innerHTML =
+    xmlDoc.getElementsByTagName("book")[3].attributes.length;
+
+
+  let attrs = xmlDoc.getElementsByTagName("book")[3].attributes;
+  let valores = "";
+
+  for (let i = 0; i < attrs.length; i++) {
+    valores += attrs[i].nodeValue + "<br>";
+  }
+
+  document.getElementById("atributos").innerHTML += "<br>" + valores;
+
+
+  let numAutores =
+    xmlDoc.getElementsByTagName("book")[2]
+          .getElementsByTagName("author").length;
+
+  document.getElementById("autores").innerHTML = numAutores + "<br>";
+
+  let autores =
+    xmlDoc.getElementsByTagName("book")[2]
+          .getElementsByTagName("author");
+
+  for (let i = 0; i < autores.length; i++) {
+    document.getElementById("autores").innerHTML +=
+      autores[i].childNodes[0].nodeValue + "<br>";
+  }
+
+
+  let books = xmlDoc.getElementsByTagName("book");
+  let tabla = "<table border='1'>";
+  tabla += "<tr><th>Título</th><th>Autor</th><th>Precio</th><th>Año</th></tr>";
+
+  for (let i = 0; i < books.length; i++) {
+    let title = books[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    let author = books[i].getElementsByTagName("author")[0].childNodes[0].nodeValue;
+    let price = books[i].getElementsByTagName("price")[0].childNodes[0].nodeValue;
+    let year = books[i].getElementsByTagName("year")[0].childNodes[0].nodeValue;
+
+    tabla += "<tr>";
+    tabla += "<td>" + title + "</td>";
+    tabla += "<td>" + author + "</td>";
+    tabla += "<td>" + price + "</td>";
+    tabla += "<td>" + year + "</td>";
+    tabla += "</tr>";
+  }
+
+  tabla += "</table>";
+
+  document.getElementById("tabla").innerHTML = tabla;
+
+};
+
+xhttp.open("GET", "https://www.w3schools.com/xml/books.xml");
+xhttp.send();
+</script>
+
+</body>
+</html>
