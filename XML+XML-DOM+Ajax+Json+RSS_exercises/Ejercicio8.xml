@@ -1,0 +1,76 @@
+<!-- Ejercicio1 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+  <deportista>
+    <deporte>Atletismo</deporte>
+    <nombre>Jesse Owens</nombre>
+  </deportista>
+  <deportista>
+    <deporte>Natación</deporte>
+    <nombre>Mark Spitz</nombre>
+  </deportista>
+</deportistas>
+<!-- Ejercicio2 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+  <pelicula>
+    <titulo>Inception</titulo>
+    <director>Christopher Nolan</director>
+  </pelicula>
+  <pelicula>
+    <titulo>Avatar</titulo>
+    <director>James Cameron</director>
+  </pelicula>
+</peliculas>
+<!-- Ejercicio3 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<texto>
+  <parrafo>Este es un texto de ejemplo.</parrafo>
+  <parrafo>Segundo párrafo correctamente cerrado.</parrafo>
+</texto>
+<!-- Ejercicio4 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<lugares>
+  <lugar>
+    <nombre>España</nombre>
+    <capital>Madrid</capital>
+  </lugar>
+  <lugar>
+    <nombre>Francia</nombre>
+    <capital>París</capital>
+  </lugar>
+</lugares>
+<!-- Ejercicio5 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<programas>
+  <programa>
+    <nombre>Word</nombre>
+    <tipo>Procesador de texto</tipo>
+  </programa>
+  <programa>
+    <nombre>Excel</nombre>
+    <tipo>Hoja de cálculo</tipo>
+  </programa>
+</programas>
+<!-- Ejercicio6 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<mundiales>
+  <mundial>
+    <anio>2010</anio>
+    <pais>Sudáfrica</pais>
+  </mundial>
+  <mundial>
+    <anio>2014</anio>
+    <pais>Brasil</pais>
+  </mundial>
+</mundiales>
+<!-- Ejercicio7 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<transportes>
+  <transporte>
+    <tipo>Coche</tipo>
+  </transporte>
+  <transporte>
+    <tipo>Avión</tipo>
+  </transporte>
+</transportes>
