@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+<xsl:template match="/">
+<html>
+<body>
+
+<!-- ============================= -->
+<!-- 1. Lista de carreras -->
+<!-- ============================= -->
+<h2>Carreras</h2>
+<ul>
+  <xsl:for-each select="universidad/carreras/carrera">
+    <li>
+      <xsl:value-of select="nombre"/>
+    </li>
+  </xsl:for-each>
+</ul>
+
+<!-- ============================= -->
+<!-- 2. Lista de asignaturas -->
+<!-- ============================= -->
+<h2>Asignaturas</h2>
+<ul>
+  <xsl:for-each select="universidad/asignaturas/asignatura">
+    <li>
+      <xsl:value-of select="nombre"/>
+    </li>
+  </xsl:for-each>
+</ul>
+
+<!-- ============================= -->
+<!-- 3. Apellidos y nombre alumnos -->
+<!-- ============================= -->
+<h2>Alumnos</h2>
+<xsl:for-each select="universidad/alumnos/alumno">
+  <p>
+    <xsl:value-of select="apellido1"/> 
+    <xsl:value-of select="apellido2"/> , 
+    <xsl:value-of select="nombre"/>
+  </p>
+</xsl:for-each>
+
+<!-- ============================= -->
+<!-- 4. Tabla de carreras -->
+<!-- ============================= -->
+<h2>Tabla de Carreras</h2>
+<table border="1">
+<tr>
+  <th>Nombre</th>
+  <th>Plan</th>
+  <th>Créditos</th>
+</tr>
+
+<xsl:for-each select="universidad/carreras/carrera">
+<tr>
+  <td><xsl:value-of select="nombre"/></td>
+  <td><xsl:value-of select="plan"/></td>
+  <td><xsl:value-of select="creditos"/></td>
+</tr>
+</xsl:for-each>
+
+</table>
+
+<!-- ============================= -->
+<!-- 5. Tabla de asignaturas -->
+<!-- ============================= -->
+<h2>Tabla de Asignaturas</h2>
+<table border="1">
+<tr>
+  <th>Nombre</th>
+  <th>Créditos Teóricos</th>
+  <th>Créditos Prácticos</th>
+</tr>
+
+<xsl:for-each select="universidad/asignaturas/asignatura">
+<tr>
+  <td><xsl:value-of select="nombre"/></td>
+  <td><xsl:value-of select="creditos_teoricos"/></td>
+  <td><xsl:value-of select="creditos_practicos"/></td>
+</tr>
+</xsl:for-each>
+
+</table>
+
+</body>
+</html>
+</xsl:template>
+
+</xsl:stylesheet>
