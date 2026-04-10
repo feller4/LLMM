@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Información Meteorológica</title>
+
+<style>
+body {
+  font-family: Arial;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Tiempo en Huelva</h1>
+
+<div id="info"></div>
+
+<script>
+const xhttp = new XMLHttpRequest();
+
+xhttp.onload = function() {
+
+  const xmlDoc = this.responseXML;
+
+  let max = xmlDoc.getElementsByTagName("temperatura")[0]
+                  .getElementsByTagName("maxima")[0].textContent;
+
+  let min = xmlDoc.getElementsByTagName("temperatura")[0]
+                  .getElementsByTagName("minima")[0].textContent;
+
+  let humedad = xmlDoc.getElementsByTagName("humedad_relativa")[0]
+                      .getElementsByTagName("dato")[0].textContent;
+
+  let estado = xmlDoc.getElementsByTagName("estado_cielo")[0].textContent;
+
+  let vientoDir = xmlDoc.getElementsByTagName("direccion")[0].textContent;
+  let vientoVel = xmlDoc.getElementsByTagName("velocidad")[0].textContent;
+
+  let tabla = "<table>";
+  tabla += "<tr><th>Dato</th><th>Valor</th></tr>";
+
+  tabla += "<tr><td>Temperatura máxima</td><td>" + max + "°C</td></tr>";
+  tabla += "<tr><td>Temperatura mínima</td><td>" + min + "°C</td></tr>";
+  tabla += "<tr><td>Humedad</td><td>" + humedad + "%</td></tr>";
+  tabla += "<tr><td>Estado del cielo</td><td>" + estado + "</td></tr>";
+  tabla += "<tr><td>Viento</td><td>" + vientoDir + " - " + vientoVel + " km/h</td></tr>";
+
+  tabla += "</table>";
+
+  document.getElementById("info").innerHTML = tabla;
+};
+
+xhttp.open("GET", "https://www.aemet.es/xml/municipios/localidad_21041.xml");
+xhttp.send();
+</script>
+
+</body>
+</html>
