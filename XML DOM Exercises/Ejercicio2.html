@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ejercicio 2 - XML DOM</h2>
+
+<p id="titulos"></p>
+<p id="precios"></p>
+<p id="companias"></p>
+
+<script>
+const xhttp = new XMLHttpRequest();
+
+xhttp.onload = function() {
+
+  const xmlDoc = this.responseXML;
+
+  let titulos = "";
+  let t = xmlDoc.getElementsByTagName("TITLE");
+
+  for (let i = 0; i < t.length; i++) {
+    titulos += t[i].childNodes[0].nodeValue + "<br>";
+  }
+
+  document.getElementById("titulos").innerHTML = "<b>TÍTULOS:</b><br>" + titulos;
+
+
+  let precios = "";
+  let p = xmlDoc.getElementsByTagName("PRICE");
+
+  for (let i = 0; i < p.length; i++) {
+    precios += p[i].childNodes[0].nodeValue + " €<br>";
+  }
+
+  document.getElementById("precios").innerHTML = "<b>PRECIOS:</b><br>" + precios;
+
+
+  let companias = "";
+  let c = xmlDoc.getElementsByTagName("COMPANY");
+
+  for (let i = 0; i < c.length; i++) {
+    companias += c[i].childNodes[0].nodeValue + "<br>";
+  }
+
+  document.getElementById("companias").innerHTML = "<b>COMPAÑÍAS:</b><br>" + companias;
+
+};
+
+xhttp.open("GET", "https://www.w3schools.com/xml/cd_catalog.xml");
+xhttp.send();
+</script>
+
+</body>
+</html>
