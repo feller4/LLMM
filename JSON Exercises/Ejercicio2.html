@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ejercicio 2 JSON</h2>
+<div id="demo"></div>
+
+<script>
+const myObj = {
+  name: "John",
+  age: 30,
+  cars: [
+    { name: "Ford", models: ["Fiesta", "Focus"] },
+    { name: "BMW", models: ["320", "X3"] },
+    { name: "Fiat", models: ["500", "Panda"] }
+  ]
+};
+
+let txt = "";
+
+txt += "Name: " + myObj.name + "<br>";
+txt += "Age: " + myObj.age + "<br><br>";
+
+for (let i = 0; i < myObj.cars.length; i++) {
+  txt += "Car: " + myObj.cars[i].name + "<br>";
+
+  for (let j = 0; j < myObj.cars[i].models.length; j++) {
+    txt += "- " + myObj.cars[i].models[j] + "<br>";
+  }
+
+  txt += "<br>";
+}
+
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>
