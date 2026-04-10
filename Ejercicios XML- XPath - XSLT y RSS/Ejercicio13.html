@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RSS con AJAX</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        h2 {
+            color: #333;
+        }
+        .noticia {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Noticias RSS (El País)</h2>
+
+<div id="rss"></div>
+
+<script>
+
+const xhttp = new XMLHttpRequest();
+
+xhttp.onload = function() {
+
+    const xmlDoc = this.responseXML;
+    const items = xmlDoc.getElementsByTagName("item");
+
+    let salida = "";
+
+    for (let i = 0; i < items.length; i++) {
+
+        let titulo = items[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        let enlace = items[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
+        let descripcion = items[i].getElementsByTagName("description")[0].childNodes[0].nodeValue;
+
+        salida += "<div class='noticia'>";
+        salida += "<h3><a href='" + enlace + "' target='_blank'>" + titulo + "</a></h3>";
+        salida += "<p>" + descripcion + "</p>";
+        salida += "</div>";
+    }
+
+    document.getElementById("rss").innerHTML = salida;
+};
+
+xhttp.open("GET", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada");
+xhttp.send();
+
+</script>
+
+</body>
+</html>
