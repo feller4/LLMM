@@ -112,3 +112,13 @@
 | [Mi sitio web](Mi-sitio-web) | Contenido|
 | [Enlace](https://feller4.github.io/LLMM/Mi-sitio-web/) | Actividades del segundo trimestre|
 
+## Tema 4 - XML
+
+| Actividad | descripción |
+| --- | --- |
+| [Ejercicio 1](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio1.xml) | Actividades XML |
+| [Ejercicio 2](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio2.xml) | Actividades XML |
+| [Ejercicio 3](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio3.xml) | Actividades XML |
+| [Ejercicio 4](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio4.xml) | Actividades XML |
+| [Ejercicio 5](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio5.xml) | Actividades XML |
+| [Ejercicio 6](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio6.xml) | Actividades XML |
