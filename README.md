@@ -122,3 +122,13 @@
 | [Ejercicio 4](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio4.xml) | Actividades XML |
 | [Ejercicio 5](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio5.xml) | Actividades XML |
 | [Ejercicio 6](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio6.xml) | Actividades XML |
+| [Ejercicio 7](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio7.xml) | Actividades XML |
+| [Ejercicio 8](XML+XML-DOM+Ajax+Json+RSS_exercises/Ejercicio8.xml) | Actividades XML |
+
+## Tema 4 - XML DOM
+
+| Actividad | descripción |
+| --- | --- |
+| [Ejercicio 1](XML%20DOM%20Exercises/Ejercicio1.xml) | Actividades XML DOM |
+| [Ejercicio 2](XML%20DOM%20Exercises/Ejercicio2.html) | Actividades XML DOM |
+| [Ejercicio 3](XML%20DOM%20Exercises/Ejercicio3.html) | Actividades XML DOM |
