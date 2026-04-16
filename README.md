@@ -150,3 +150,20 @@
 | [Ejercicio 3](JSON%20Exercises/Ejercicio3.html) | Actividades JSON |
 | [Ejercicio 4](JSON%20Exercises/Ejercicio4.html) | Actividades JSON |
 | [Ejercicio 5](JSON%20Exercises/Ejercicio5.html) | Actividades JSON |
+
+## Tema 4 - XML DTD, XPath, RSS
+
+| Actividad | descripción |
+| --- | --- |
+| [Ejercicio 1](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio1.xml) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 2](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio2.xml) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 3](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio3.xml) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 4](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio4.xml) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 5](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio5.xml) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 6](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio6.xml) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 8](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio8.xml) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 9](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio9.xpath) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 10](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio10.xpath) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 11](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio11.xpath) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 12](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio12.xml) | Actividades XML DTD, XPath, RSS |
+| [Ejercicio 13](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio13.html) | Actividades XML DTD, XPath, RSS |
