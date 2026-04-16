@@ -132,3 +132,11 @@
 | [Ejercicio 1](XML%20DOM%20Exercises/Ejercicio1.xml) | Actividades XML DOM |
 | [Ejercicio 2](XML%20DOM%20Exercises/Ejercicio2.html) | Actividades XML DOM |
 | [Ejercicio 3](XML%20DOM%20Exercises/Ejercicio3.html) | Actividades XML DOM |
+
+## Tema 4 - AJAX
+
+| Actividad | descripción |
+| --- | --- |
+| [Ejercicio 1](AJAX%20Exercises/Ejercicio1.html) | Actividades AJAX |
+| [Ejercicio 2](AJAX%20Exercises/Ejercicio2.html) | Actividades AJAX |
+| [Ejercicio 3](AJAX%20Exercises/Ejercicio3.html) | Actividades AJAX |
