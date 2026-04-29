@@ -173,4 +173,4 @@
 | Actividad | descripción |
 | --- | --- |
 | [Concurso de preguntas](ProyectoXML) | Contenido|
-| [Enlace](https://feller4.github.io/ProyectoXML/index.html) | Actividades del segundo trimestre|
+| [Enlace](https://feller4.github.io/LLMM/ProyectoXML/index.html) | Actividades del segundo trimestre|
