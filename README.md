@@ -167,3 +167,10 @@
 | [Ejercicio 11](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio11.xpath) | Actividades XML DTD, XPath, RSS |
 | [Ejercicio 12](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio12.xml) | Actividades XML DTD, XPath, RSS |
 | [Ejercicio 13](Ejercicios%20XML-%20XPath%20-%20XSLT%20y%20RSS/Ejercicio13.html) | Actividades XML DTD, XPath, RSS |
+
+## Actividad del 3ª Trimestre
+
+| Actividad | descripción |
+| --- | --- |
+| [Concurso de preguntas](ProyectoXML) | Contenido|
+| [Enlace](https://feller4.github.io/ProyectoXML/index.html) | Actividades del segundo trimestre|
